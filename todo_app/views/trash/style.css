@@ -1,0 +1,87 @@
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	user-select: none;
+	background: #5f2c82; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #49a09d, #5f2c82); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#49a09d,
+		#5f2c82
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h3,
+legend {
+	background-color: #fff;
+	color: #000;
+	margin: 0;
+	padding: 5px 110px 5px 110px;
+	border-radius: 25px;
+	box-shadow: 10px 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+}
+span {
+	float: right;
+}
+span:hover {
+	cursor: pointer;
+}
+form.visibility {
+	width: 80%;
+	margin: auto;
+}
+.actionForm {
+	display: inline;
+}
+button i {
+	transition: 0.2s;
+}
+button:hover i {
+	font-size: 1.3em;
+}
+.visibility {
+	display: none;
+}
+input.formInput {
+	border-radius: 0 !important;
+	display: inline;
+	height: 60px;
+	transition: 0.5s !important;
+}
+input.formInput:focus {
+	font-size: 2em;
+}
+table {
+	background-color: #fff;
+	margin: auto;
+	position: relative;
+	width: 80% !important;
+	text-align: center;
+	
+}
+.thwidth {
+	width: 120px;
+}
+.todoRow {
+	
+	transition: transform 0.2s;
+}
+  
+.todoRow:hover {
+	font-weight: 500;
+	transform: scale(1.05);
+}
+/* .todoRow:hover {
+	height: 60px;
+} */
+tr:nth-child(odd) {
+	background-color: #ddd;
+}
+tr:nth-child(even) {
+	background-color: #fff;
+}
+button {
+	border-radius: 0 !important;
+}

@@ -1,0 +1,99 @@
+body {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	user-select: none;
+	background: #5f2c82; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #49a09d, #5f2c82); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(
+		to left,
+		#49a09d,
+		#5f2c82
+	); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h3,
+legend {
+	background-color: #fff;
+	color: #000;
+	margin: 0;
+	padding: 10px 100px 10px 100px;
+	/* border-radius: 25px;
+	box-shadow: 10px 10px; */
+	text-transform: uppercase;
+	letter-spacing: 0.15rem;
+}
+span {
+	float: right;
+}
+span:hover {
+	cursor: pointer;
+}
+form.visibility {
+	/* width: 80%; */
+	margin: auto;
+}
+.actionForm {
+	display: inline;
+}
+button i {
+	transition: 0.2s;
+}
+button:hover i {
+	font-size: 1.3em;
+}
+.visibility {
+	display: none;
+}
+input.formInput {
+	border-radius: 0 !important;
+	display: inline;
+	height: 60px;
+	transition: 0.5s !important;
+}
+input.formInput:focus {
+	font-size: 2em;
+}
+.pop-up {
+	transition: transform 0.2s;
+}
+.pop-up:hover {
+	font-size: 1.1rem;
+	transform: scale(1.1);
+}
+.pop-up:hover .todo {
+	background: #f8de7e;
+}
+.pop-up:hover .actionButton {
+	/* background: orange; */
+	border-radius: 50%;
+}
+.todo {
+	transition: 0.6s;
+	padding: 30px 20px 20px 20px;
+	background: #fff;
+	height: 150px;
+	overflow: auto;
+}
+.date {
+	background: #222;
+	color: #fff;
+	position: relative;
+	top: 32px;
+	height: 30px;
+	text-align: center;
+	border-radius: 20px 20px 0 0;
+}
+.actions {
+	text-align: right;
+	position: relative;
+	top: 35px;
+	right: 20px;
+}
+.actionButton {
+	/* border-radius: 50%; */
+	transition: 0.6s;
+}
+.form {
+	background: rgba(255, 255, 255, 0.6);
+	border-radius: 20px;
+}
