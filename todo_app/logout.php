@@ -7,7 +7,7 @@
             $_SESSION = array();
             session_destroy();
             // $success_message = "Successfully loged out."; 
-            header("location: login.php");
+            header("location: login");
             exit;
         }
         else{

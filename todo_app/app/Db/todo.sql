@@ -44,7 +44,7 @@ CREATE TABLE `todotasks` (
 
 CREATE TABLE `users` (
   `id` int(11) UNSIGNED NOT NULL,
-  `u_name` varchar(40) NOT NULL,
+  `full_name` varchar(40) NOT NULL,
   `email` varchar(40) NOT NULL,
   `pass` varchar(512) NOT NULL,
   `is_active` int(1) NOT NULL DEFAULT 1,

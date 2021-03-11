@@ -20,7 +20,7 @@
                         $insertid = $tablemodel->makeUser($user,$email,$pass);
                         if($insertid){
                             // $success_message = "You registered yourself successfully.";
-                            header("location:login.php");
+                            header("location:login");
                             exit;
                         }else{
                             $error_message = "You failed to register yourself.";

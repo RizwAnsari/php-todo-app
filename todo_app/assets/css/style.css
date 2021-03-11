@@ -82,6 +82,7 @@ input.formInput:focus {
 	height: 30px;
 	text-align: center;
 	border-radius: 20px 20px 0 0;
+	font-size: 0.8rem;
 }
 .actions {
 	text-align: right;
@@ -92,6 +93,9 @@ input.formInput:focus {
 .actionButton {
 	/* border-radius: 50%; */
 	transition: 0.6s;
+}
+.form-container{
+	width: 60%;
 }
 .form {
 	background: rgba(255, 255, 255, 0.6);

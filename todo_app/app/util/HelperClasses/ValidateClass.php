@@ -14,7 +14,7 @@
         
         public function filterUser($user){
             $user = filter_var(trim($user),FILTER_SANITIZE_STRING);
-            if(filter_var($user,FILTER_VALIDATE_REGEXP,array("options"=>array("regexp"=>"/^[A-Z]+$/i")))){
+            if(filter_var($user,FILTER_VALIDATE_REGEXP,array("options"=>array("regexp"=>"^[\\p{L} .'-]+$^")))){
                 return $user;
             }else{
                 return false;

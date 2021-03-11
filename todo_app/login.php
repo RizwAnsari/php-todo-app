@@ -12,8 +12,8 @@
 
     session_start();
 
-    if(isset($_SESSION['loggedin'])) {
-        header("Location: index.php");
+    if(Auth::loginStatus()) {
+        header("Location: index");
         exit;
     }
 
@@ -25,12 +25,11 @@
             $pass = $validation->filterPass($_POST["logPass"]);
             if($email && $pass){
                 if(Auth::authUser($tablemodel,$email,$pass)){
-                    header("location:  index.php");
+                    header("location:  index");
                     exit;
                 }else{
                     $error_message = "Invalid email address or password.";
                 }
-                // Auth::authUser($tablemodel,$email,$pass);
             }else{
                 if(!$email){
                     $error_message = "Invalid format of email address";

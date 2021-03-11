@@ -2,7 +2,7 @@
 require_once "partials/header.php";
 ?>
 
-<div class="container mt-5">
+<div class="container mt-5 form-container">
       <form method="POST" action="./login.php" class="px-4 py-3 form">
       <p class="mb-4 lead">Login</p>
       <div class="mb-3">
